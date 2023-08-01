@@ -1,0 +1,8 @@
+__pycache__
+.DS_Store
+*.pyc
+build/
+*.egg-info/
+useragent_changer/__pycache__/
+useragent_changer/.DS_Store
+useragent_changer/*.pyc
