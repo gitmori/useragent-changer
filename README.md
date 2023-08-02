@@ -8,12 +8,12 @@ A library for changing user agents in order to verify the operation of web syste
 - There are a total of 19381 User-Agents.
 - Supports Python 3.x
 
-**Installation**
+### Installation
 ```bash
 pip install useragent-changer
 ```
 
-**Usage**
+### Usage
 ```python
 from useragent_changer import UserAgent
 
@@ -58,14 +58,14 @@ ua = UserAgent()
 ua.set()
 ```
 
-**Changelog**
+## Changelog
 - 0.1.0 July 26, 2023
     - First push
 
-**Author**
+## Author
 Yuki Moriya ([gitmori](https://github.com/gitmori/))  
 ym19820219@gmail.com
 
-**Licence**
+## Licence
 Copyright (c) 2023 Yuki Moriya  
 This software is released under the MIT License, see LICENSE.txt.
