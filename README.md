@@ -4,17 +4,17 @@ A library for changing user agents in order to verify the operation of web syste
 ## Features
 - This package contains a total of 19381 User-Agents for Android, iPhone, iPad, Windows, Mac, Chrome, Edge, Safari and Firefox.
 - User-Agent corresponding to each platform is described in 9 csv files in the data folder in this package.
-- Number of User-Agent data: Android (2144), iPhone (750), iPad (45), Windows (2532), Mac (1739), Chrome (4996), Edge (91), Safari (4952), Firefox (2132)
+- Number of User-Agent data: Android (2144), Chrome (4996), Edge (91), Firefox (2132), iPad (45), iPhone (750), Mac (1739), Safari (4952), Windows (2532)
 - There are a total of 19381 User-Agents.
 - Supports Python 3.x
 
 ### Installation
-```bash
+```
 pip install useragent-changer
 ```
 
 ### Usage
-```python
+```
 from useragent_changer import UserAgent
 
 ua = UserAgent('android')
@@ -53,14 +53,39 @@ ua = UserAgent('firefox')
 ua.set()
 # Dalvik/2.1.0 (Linux; U; Android 10; ASUS_Z01RD Build/QKQ1.191008.001)
 
-# Get a random User-Agent.
 ua = UserAgent()
 ua.set()
+# Get a random User-Agent
+```
+
+### Test
+If you don't have Selenium installed, run the following command: `pip install selenium==4.5.0`  
+Regarding selenium versions higher than 4.5.0, I have not yet confirmed the operation.
+
+```
+from selenium.webdriver import ChromeOptions, Chrome
+from useragent_changer import UserAgent
+from time import sleep
+
+PLATFORM= 'firefox'
+ua = UserAgent(PLATFORM).set()
+
+URL = 'https://develop.tools/env-variable/'
+
+options = ChromeOptions()
+options.add_argument('--user-agent=' + ua)
+driver = Chrome(options=options)
+driver.get(URL)
+
+sleep(5)
+driver.quit()
 ```
 
 ## Changelog
-- 0.1.0 July 26, 2023
+- 0.1.1 August 02, 2023
     - First push
+- 0.2.1 August 06, 2023
+    - Fixed README file and test files
 
 ## Author
 Yuki Moriya ([gitmori](https://github.com/gitmori/))  
