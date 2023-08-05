@@ -60,7 +60,7 @@ ua.set()
 
 ### Test
 If you don't have Selenium installed, run the following command: `pip install selenium==4.5.0`  
-Regarding selenium versions higher than 4.5.0, I have not yet confirmed the operation.
+Regarding Selenium versions higher than 4.5.0, I have not yet confirmed the operation.
 
 ```
 from selenium.webdriver import ChromeOptions, Chrome
