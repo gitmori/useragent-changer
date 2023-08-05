@@ -86,6 +86,8 @@ driver.quit()
     - First push
 - 0.2.1 August 06, 2023
     - Fixed README file, test files and version number
+- 0.2.2 August 06, 2023
+    - Fixed README file, test files and version number
 
 ## Author
 Yuki Moriya ([gitmori](https://github.com/gitmori/))  
