@@ -9,8 +9,12 @@ A library for changing user agents in order to verify the operation of web syste
 - Supports Python 3.x
 
 ### Installation
+Enter one of the following two commands:
 ```
 pip install useragent-changer
+```
+```
+pip install git+https://github.com/gitmori/useragent-changer
 ```
 
 ### Usage
@@ -59,8 +63,8 @@ ua.set()
 ```
 
 ### Test
-If you don't have Selenium installed, run the following command: `pip install selenium==4.5.0`  
-Regarding Selenium versions higher than 4.5.0, I have not yet confirmed the operation.
+If you don't have Selenium installed, run the following command: `pip install selenium==4.10.0`  
+Regarding Selenium versions higher than 4.10.0, I have not yet confirmed the operation.
 
 ```
 from selenium.webdriver import ChromeOptions, Chrome
@@ -88,6 +92,8 @@ driver.quit()
     - Fixed README file, test files and version number
 - 0.2.2 August 06, 2023
     - Fixed README file, test files and version number
+- 0.2.3 August 06, 2023
+    - Fixed README file and version number
 
 ## Author
 Yuki Moriya ([gitmori](https://github.com/gitmori/))  
