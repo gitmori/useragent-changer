@@ -2,10 +2,8 @@
 A library for changing user agents in order to verify the operation of web systems.
 
 ## Features
-- This package contains a total of 19381 User-Agents for Android, iPhone, iPad, Windows, Mac, Chrome, Edge, Safari and Firefox.
+- This package contains a total of 19,381 User-Agent data for Android (2,144), Chrome (4,996), Edge (91), Firefox (2,132), iPad (45), iPhone (750), Mac (1,739), Safari (4,952), Windows (2,532).
 - User-Agent corresponding to each platform is described in 9 csv files in the data folder in this package.
-- Number of User-Agent data: Android (2144), Chrome (4996), Edge (91), Firefox (2132), iPad (45), iPhone (750), Mac (1739), Safari (4952), Windows (2532)
-- There are a total of 19381 User-Agents.
 - Supports Python 3.x
 
 ### Installation
@@ -93,6 +91,8 @@ driver.quit()
 - 0.2.2 August 06, 2023
     - Fixed README file, test files and version number
 - 0.2.3 August 06, 2023
+    - Fixed README file and version number
+- 0.2.4 August 06, 2023
     - Fixed README file and version number
 
 ## Author
