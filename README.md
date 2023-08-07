@@ -2,8 +2,9 @@
 A library for changing user agents in order to verify the operation of web systems.
 
 ## Features
-- This package contains a total of 19,381 User-Agent data for Android (2,144), Chrome (4,996), Edge (91), Firefox (2,132), iPad (45), iPhone (750), Mac (1,739), Safari (4,952), Windows (2,532).
-- User-Agent corresponding to each platform is described in 9 csv files in the data folder in this package.
+- This package contains User-Agent data for a total of 19,381 for the platforms listed below. 
+- Android (2,144), Chrome (4,996), Edge (91), Firefox (2,132), iPad (45), iPhone (750), Mac (1,739), Safari (4,952), Windows (2,532)
+- User-Agent corresponding to each platform is described in 9 CSV files in the data folder in this package.
 - Supports Python 3.x
 
 ### Installation
@@ -61,9 +62,7 @@ ua.set()
 ```
 
 ### Test
-If you don't have Selenium installed, run the following command: `pip install selenium==4.10.0`  
-Regarding Selenium versions higher than 4.10.0, I have not yet confirmed the operation.
-
+If you don't have Selenium installed, run the following command: `pip install selenium`
 ```
 from selenium.webdriver import ChromeOptions, Chrome
 from useragent_changer import UserAgent
@@ -93,6 +92,8 @@ driver.quit()
 - 0.2.3 August 06, 2023
     - Fixed README file and version number
 - 0.2.4 August 06, 2023
+    - Fixed README file and version number
+- 0.2.41 August 08, 2023
     - Fixed README file and version number
 
 ## Author
