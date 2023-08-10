@@ -13,37 +13,37 @@ from useragent_changer import UserAgent
 
 def main():
 
-    # Create an instance and call the method (random platform if no arguments)
-    ua0 = UserAgent().set()
+    # Create an instance (random platform if no arguments)
+    ua0 = UserAgent()
 
-    #  Create an instance and call the method (set 'Android')
-    ua1 =  UserAgent('android').set()
+    #  Create an instance (Set 'Android' as the platform)
+    ua1 =  UserAgent('android')
 
-    # Create an instance and call the method (set 'Chrome')
-    ua2 = UserAgent('chrome').set()
+    # Create an instance (Set 'Chrome' as the platform)
+    ua2 = UserAgent('chrome')
 
-    # Create an instance and call the method (set 'Edge')
-    ua3 = UserAgent('edge').set()
+    # Create an instance (Set 'Edge' as the platform)
+    ua3 = UserAgent('edge')
 
-    # Create an instance and call the method (set 'Firefox')
-    ua4 = UserAgent('firefox').set()
+    # Create an instance (Set 'Firefox' as the platform)
+    ua4 = UserAgent('firefox')
 
-    # Create an instance and call the method (set 'iPad')
-    ua5 = UserAgent('ipad').set()
+    # Create an instance (Set 'iPad' as the platform)
+    ua5 = UserAgent('ipad')
 
-    # Create an instance and call the method (set 'iPhone')
-    ua6 = UserAgent('iphone').set()
+    # Create an instance (Set 'iPhone' as the platform)
+    ua6 = UserAgent('iphone')
 
-    # Create an instance and call the method (set 'Mac')
-    ua7 = UserAgent('mac').set()
+    # Create an instance (Set 'Mac' as the platform)
+    ua7 = UserAgent('mac')
 
-    # Create an instance and call the method (set 'Safari')
-    ua8 = UserAgent('safari').set()
+    # Create an instance (Set 'Safari' as the platform)
+    ua8 = UserAgent('safari')
 
-    # Create an instance and call the method (set 'Windows')
-    ua9 = UserAgent('windows').set()
+    # Create an instance (Set 'Windows' as the platform)
+    ua9 = UserAgent('windows')
 
-    ua_list = [ua0, ua1, ua2, ua3, ua4, ua5, ua6, ua7, ua8, ua9]
+    ua_list = [ua0.set(), ua1.set(), ua2.set(), ua3.set(), ua4.set(), ua5.set(), ua6.set(), ua7.set(), ua8.set(), ua9.set()]
 
     # Test User-Agent output
     for list in ua_list:
