@@ -14,15 +14,25 @@ path.append(str(current_dir) + '/..')
 from useragent_changer import UserAgent
 from time import sleep
 
-PLATFORM= 'edge'
-ua = UserAgent(PLATFORM).set()
+# Set the platform
+PLATFORM= 'android'
 
+# Set the URL
 URL = 'https://develop.tools/env-variable/'
 
+# Create an instance
+ua = UserAgent(PLATFORM)
+
+# Set options
 options = ChromeOptions()
-options.add_argument('--user-agent=' + ua)
+options.add_argument('--ignore-certificate-errors')
+options.add_argument('--user-agent=' + ua.set())
+
+# Launch browser using 'chromedriver'
 driver = Chrome(options=options)
 driver.get(URL)
 
-sleep(5)
+# Quit the browser after waiting a set number of seconds
+SECONDS = 5
+sleep(SECONDS)
 driver.quit()

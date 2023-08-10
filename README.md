@@ -21,43 +21,43 @@ pip install git+https://github.com/gitmori/useragent-changer
 from useragent_changer import UserAgent
 
 ua = UserAgent('android')
-ua.set()
+print(ua.set())
 # Dalvik/2.1.0 (Linux; U; Android 10; ASUS_Z01RD Build/QKQ1.191008.001)
 
 ua = UserAgent('iphone')
-ua.set()
+print(ua.set())
 # Mozilla/5.0 (iPhone; CPU iPhone OS 12_5_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.2 Mobile/15E148 Safari/604.1
 
 ua = UserAgent('ipad')
-ua.set()
+print(ua.set())
 # Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/94.0.4606.76 Mobile/15E148 Safari/604.1
 
 ua = UserAgent('windows')
-ua.set()
+print(ua.set())
 # Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)
 
 ua = UserAgent('mac')
-ua.set()
+print(ua.set())
 # Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0
 
 ua = UserAgent('chrome')
-ua.set()
+print(ua.set())
 # Mozilla / 5.0 (Windows NT 10.0; Win64; x64) AppleWebKit / 537.36 (KHTML, like Gecko) Chrome / 74.0.3729.169 Safari / 537.36
 
 ua = UserAgent('edge')
-ua.set()
+print(ua.set())
 # Mozilla/5.0 (Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.9200
 
 ua = UserAgent('safari')
-ua.set()
+print(ua.set())
 # Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; ja) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.523 Mobile Safari/534.11+
 
 ua = UserAgent('firefox')
-ua.set()
+print(ua.set())
 # Dalvik/2.1.0 (Linux; U; Android 10; ASUS_Z01RD Build/QKQ1.191008.001)
 
 ua = UserAgent()
-ua.set()
+print(ua.set())
 # Get a random User-Agent
 ```
 
@@ -69,12 +69,12 @@ from useragent_changer import UserAgent
 from time import sleep
 
 PLATFORM= 'firefox'
-ua = UserAgent(PLATFORM).set()
+ua = UserAgent(PLATFORM)
 
 URL = 'https://develop.tools/env-variable/'
 
 options = ChromeOptions()
-options.add_argument('--user-agent=' + ua)
+options.add_argument('--user-agent=' + ua.set())
 driver = Chrome(options=options)
 driver.get(URL)
 
@@ -95,6 +95,10 @@ driver.quit()
     - Fixed README file and version number
 - 0.2.41 August 08, 2023
     - Fixed README file and version number
+- 0.2.42 August 08, 2023
+    - Fixed README file and version number
+- 0.2.5 August 11, 2023
+    - Fixed README file, test files and version number
 
 ## Author
 Yuki Moriya ([gitmori](https://github.com/gitmori/))  
