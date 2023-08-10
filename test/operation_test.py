@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from selenium.webdriver import ChromeOptions, Chrome
 
 from pathlib import Path
