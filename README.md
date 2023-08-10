@@ -69,16 +69,19 @@ from useragent_changer import UserAgent
 from time import sleep
 
 PLATFORM= 'firefox'
-ua = UserAgent(PLATFORM)
-
 URL = 'https://develop.tools/env-variable/'
 
+ua = UserAgent(PLATFORM)
+
 options = ChromeOptions()
+options.add_argument('--ignore-certificate-errors')
 options.add_argument('--user-agent=' + ua.set())
+
 driver = Chrome(options=options)
 driver.get(URL)
 
-sleep(5)
+SECONDS = 5
+sleep(SECONDS)
 driver.quit()
 ```
 
@@ -99,6 +102,8 @@ driver.quit()
     - Fixed README file and version number
 - 0.2.5 August 11, 2023
     - Fixed README file, test files and version number
+- 0.2.51 August 11, 2023
+    - Fixed README file and version number
 
 ## Author
 Yuki Moriya ([gitmori](https://github.com/gitmori/))  
