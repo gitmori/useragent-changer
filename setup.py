@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from setuptools import setup, find_packages
 from useragent_changer import __version__, __description__, __author__, __author_email__, __keywords__, __url__, __license__
 
