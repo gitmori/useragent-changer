@@ -16,6 +16,9 @@ pip3 install useragent-changer
 pip3 install git+https://github.com/gitmori/useragent-changer
 ```
 
+### Downloads
+[![Downloads](https://static.pepy.tech/badge/useragent-changer)](https://pepy.tech/project/useragent-changer) [![Downloads](https://static.pepy.tech/badge/useragent-changer/month)](https://pepy.tech/project/useragent-changer) [![Downloads](https://static.pepy.tech/badge/useragent-changer/week)](https://pepy.tech/project/useragent-changer)
+
 ### Usage
 ```
 from useragent_changer import UserAgent
