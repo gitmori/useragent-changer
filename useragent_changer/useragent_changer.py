@@ -12,7 +12,7 @@ class UserAgent:
         self.platform_name = self.platform()
         self.csv = self.csv_path()
 
-    # Methods for setting the platform
+    # Method for setting the platform
     def platform(self):
         dir_path = self.file_path.resolve().parent
 
