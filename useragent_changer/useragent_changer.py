@@ -3,7 +3,7 @@ from os import listdir
 from random import randint
 from csv import reader
 
-# class definition (Randomly set platform name if no arguments)
+# Class definition (Randomly set platform name if no arguments)
 class UserAgent:
     def __init__(self, selector = ''):
         self.file_path = Path(__file__)
@@ -12,7 +12,7 @@ class UserAgent:
         self.platform_name = self.platform()
         self.csv = self.csv_path()
 
-    # Method to set the platform
+    # Method for setting the platform
     def platform(self):
         dir_path = self.file_path.resolve().parent
 
@@ -32,7 +32,7 @@ class UserAgent:
             elif self.selector == '':
                 return platform_list[rnd].replace('.csv', '')
 
-    # A method to generate the path of the CSV file that describes the User-Agent of the platform set above
+    # Method for generating the path of the CSV file that describes the User-Agent of the platform set above
     def csv_path(self):
 
         # Generate relative path of CSV file describing User-Agent
@@ -44,7 +44,7 @@ class UserAgent:
         # Set the absolute path of the above CSV file as the return value
         return absolute_path
 
-    # Method to set User-Agent randomly from inside CSV file
+    # Method for randomly setting User-Agent from within a CSV file
     def set(self):
 
         # Initialize the list to store the User-Agent in the CSV file

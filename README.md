@@ -91,24 +91,8 @@ driver.quit()
 ## Changelog
 - 0.1.1 August 02, 2023
     - First push
-- 0.2.1 August 06, 2023
-    - Fixed README file, test files and version number
-- 0.2.2 August 06, 2023
-    - Fixed README file, test files and version number
-- 0.2.3 August 06, 2023
-    - Fixed README file and version number
-- 0.2.4 August 06, 2023
-    - Fixed README file and version number
-- 0.2.41 August 08, 2023
-    - Fixed README file and version number
-- 0.2.42 August 08, 2023
-    - Fixed README file and version number
-- 0.2.5 August 11, 2023
-    - Fixed README file, test files and version number
-- 0.2.51 August 11, 2023
-    - Fixed README file and version number
-- 0.3.1 August 11, 2023
-    - Fixed all files and version number
+- 0.3.2 September 12, 2023
+    - Fixed comments in module file
 
 ## Author
 Yuki Moriya ([gitmori](https://github.com/gitmori/))  
